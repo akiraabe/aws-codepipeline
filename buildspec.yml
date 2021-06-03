@@ -16,7 +16,7 @@ phases:
   post_build:
     commands:
     # - printf '[{"name":"example","imageUri":"%s"}]' $IMAGE > imageDetail.json
-    - printf '[{"name":"abe-dev-ecs-cluster","imageUri":"%s"}]' $IMAGE > imageDetail.json
+    - printf '[{"name":"abe-dev-ecr","imageUri":"%s"}]' $IMAGE > imageDetail.json
 artifacts:
   # files: imagedefinitions.json
   files: imageDetail.json
